@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper__left {
+  margin: 30px 30px;
+  background-color: white;
+  width: 310px;
+  /* padding: 50px 30px 15px 30px; */
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px rgb(228, 220, 225);
+}
+
+.header__left {
+  /* background: #fdcc32; */
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px 0px 15px;
+  /* padding-bottom: 50px; */
+}
+
+.header__left > * {
+  width: 50%;
+}
+
+.header__left h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.header__left i:last-child {
+  text-align: right;
+}
+
+.main__left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singer--picture__left {
+  margin: 20px 0px;
+  height: 80px;
+  width: 80px;
+  background-color: #e2802f;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px #e2802f;
+}
+
+.songtitle__left {
+  margin: 5px 0px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.albumtitle__left {
+  text-align: center;
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.favor--wrapper__left {
+  margin: 50px 0px;
+  display: flex;
+
+  align-items: center;
+}
+
+.shuffle--button__left {
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 25px;
+  display: block;
+  border-radius: 50px;
+}
+
+.heart--wrapper__left {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart__left {
+  margin: 0px 10px;
+}
+
+.heartrate__left {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.songlist--wrapper__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.s1--wrapper__left {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1--cover--wrapper__left {
+  width: 60px;
+  display: flex;
+  justify-content: left;
+  /* border: 1px solid red; */
+}
+.s1--cover__left {
+  width: 40px;
+  height: 40px;
+  background: pink;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.s1--info__left {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.s1--singer__left {
+  margin: 5px 0px;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 50%;
+}
+.s1--title__left {
+  font-size: 16px;
+  font-weight: 600;
+}
+.s1--dots__left {
+  opacity: 50%;
+}
+
+.player__left {
+  margin-bottom: 10px;
+  width: 270px;
+  height: 55px;
+  display: flex;
+  background: black;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info--wrapper__left {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* padding: 0px 20px; */
+}
+
+.p--singer__left {
+  margin: 5px 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  opacity: 50%;
+}
+.p--title__left {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+.btn--wrapper__left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.back__left {
+  color: white;
+  font-size: 5px;
+}
+.pause__left {
+  margin: 0px 20px;
+  color: white;
+}
+.fwd__left {
+  color: white;
+  font-size: 5px;
+}
+/* ********************************************************************* */
+/* ********************************************************************* */
+/* ********************************************************************* */
+
+.wrapper__right {
+  margin: 30px 30px;
+  background-color: white;
+  width: 310px;
+  /* padding: 50px 30px 15px 30px; */
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px rgb(228, 220, 225);
+}
+
+.header__right {
+  /* background: #fdcc32; */
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  /* padding-bottom: 50px; */
+}
+
+.header__right > * {
+  width: 50%;
+}
+
+.header__right h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.header__right i:last-child {
+  text-align: right;
+}
+
+.main__right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.album--cover__right {
+  margin: 45px 0px 50px 0px;
+  height: 225px;
+  width: 225px;
+
+  background-color: tomato;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px tomato;
+}
+.title__right {
+  margin: 10px 0px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.singer__right {
+  font-weight: 600;
+  opacity: 50%;
+}
+
+.num--wrapper__right {
+  margin-top: 20px;
+  margin-bottom: 7px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid blue; */
+}
+.numl__right {
+  width: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 50%;
+}
+.numr__right {
+  width: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 50%;
+  text-align: right;
+}
+
+.bar--wrapper__right {
+  margin-bottom: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* border: 1px solid goldenrod; */
+}
+
+.barl__right {
+  width: 147px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+.barm__right {
+  margin: -3px -2px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.barr__right {
+  width: 97px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+  opacity: 50%;
+}
+.player--wrapper__right {
+  margin: 40px 0px 50px 0px;
+  width: 250px;
+  height: 55px;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.p1__right {
+  /* border: 1px solid green; */
+  opacity: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p2__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p3--wrapper__right {
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 21px;
+  display: block;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 1px 10px black;
+}
+
+.p3__right {
+  color: white;
+  /* border: 1px solid red; */
+}
+.p4__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p5__right {
+  opacity: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

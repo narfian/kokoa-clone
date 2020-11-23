@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --yellow: #fae100;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+      }
+
+      .status-bar {
+        margin: 0px 0px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        background: rgb(241, 187, 49);
+      }
+      .status-bar__column {
+        width: 33%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      .status-bar__column:first-child span {
+        margin-right: 5px;
+      }
+      .status-bar__column:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .status-bar__column:last-child {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .status-bar__column .fa-battery-full {
+        margin: 0px 5px;
+      }
+
+      .search-form-cover {
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .search-form__input {
+        height: 40px;
+        width: 370px;
+        border: none;
+        border-radius: 30px;
+      }
+      .ys {
+        font-size: 10px;
+        color: goldenrod;
+      }
+      .gs {
+        font-size: 10px;
+        color: slategray;
+      }
+      .contents-box {
+        margin: 30px 20px 0px 20px;
+        /* background-color: rgb(185, 185, 185); */
+      }
+      .first-title {
+        margin: 20px 0px;
+        font-size: 20px;
+      }
+      .first-contents {
+        display: flex;
+      }
+      .first-contents__left {
+        display: flex;
+        justify-content: center;
+        width: 35%;
+      }
+      .first-contents__left--box {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: cadetblue;
+        width: 100px;
+        height: 150px;
+      }
+      .first-contents__right {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+      }
+      .first-contents__right__1 {
+        font-size: 17;
+      }
+      .first-contents__right__2 {
+        color: slategray;
+      }
+      .first-contents__right__3 {
+      }
+      .first-contents__right__4 {
+        margin: 20px 0px;
+        font-size: 13px;
+        font-weight: 400;
+
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .first-contents__right__5 {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        font-size: 11px;
+        font-weight: 400;
+      }
+      .first-contents__right__5__left {
+      }
+      .first-contents__right__5__right {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .first-contents__right__5__right--box {
+        height: 30px;
+        width: 100px;
+        color: white;
+        border: 2px solid black;
+        background-color: black;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .second-title {
+        margin: 20px 0px;
+        font-size: 20px;
+      }
+      .second-contents {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .second-contents__1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .second-contents__1__top--box {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: rgb(226, 124, 111);
+        width: 70px;
+        height: 110px;
+      }
+      .second-contents__2 {
+        display: flex;
+        flex-direction: column;
+      }
+      .second-contents__2__top--box {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: rgb(228, 81, 13);
+        width: 70px;
+        height: 110px;
+      }
+      .second-contents__3 {
+        display: flex;
+        flex-direction: column;
+      }
+      .second-contents__3__top--box {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: rgb(224, 88, 156);
+        width: 70px;
+        height: 110px;
+      }
+      .second-contents__4 {
+        display: flex;
+        flex-direction: column;
+      }
+      .second-contents__4__top--box {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: rgb(47, 87, 88);
+        width: 70px;
+        height: 110px;
+      }
+      .second-contents__5 {
+        display: flex;
+        flex-direction: column;
+      }
+      .third-title {
+        margin: 20px 0px;
+        font-size: 20px;
+      }
+      .third-contents {
+        display: flex;
+        justify-content: center;
+      }
+      .third-contents__left {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+      }
+      .third-contents__left--box {
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: brown;
+        width: 100px;
+        height: 130px;
+      }
+      .third-contents__right {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+      }
+      .third-contents__right__top--font {
+      }
+      .third-contents__right__bottom {
+        width: 180px;
+      }
+      .third-contents__right__bottom--font {
+        margin-top: 20px;
+        font-size: 12px;
+        opacity: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>NavIcon</span>
+      </div>
+      <div class="status-bar__column">
+        <span>Library</span>
+      </div>
+      <div class="status-bar__column">
+        <span>Cart</span>
+      </div>
+    </div>
+    <div class="search-form-cover">
+      <form class="search-form">
+        <input
+          class="search-form__input"
+          type="text"
+          placeholder="Search books..."
+        />
+      </form>
+    </div>
+    <div class="contents-box">
+      <div class="first-title">Book of the day</div>
+      <div class="first-contents">
+        <div class="first-contents__left">
+          <div class="first-contents__left--box"></div>
+        </div>
+        <div class="first-contents__right">
+          <div class="first-contents__right__1">No Fixed Abode</div>
+          <div class="first-contents__right__2">Journey Through</div>
+          <div class="first-contents__right__3">
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="gs">★</span>
+          </div>
+          <div class="first-contents__right__4">
+            <div class="first-contents__right__4__left">Journey</div>
+            <div class="first-contents__right__4__right">Biography</div>
+          </div>
+          <div class="first-contents__right__5">
+            <div class="first-contents__right__5__left">Bmk Icon</div>
+            <div class="first-contents__right__5__right">
+              <div class="first-contents__right__5__right--box">
+                <div class="first-contents__right__5__right--font">
+                  Book Now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-title">Top Adventures</div>
+      <div class="second-contents">
+        <div class="second-contents__1">
+          <div class="second-contents__1__top">
+            <div class="second-contents__1__top--box"></div>
+          </div>
+          <div class="second-contents__1__bottom">
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="gs">★</span>
+          </div>
+        </div>
+        <div class="second-contents__2">
+          <div class="second-contents__2__top">
+            <div class="second-contents__2__top--box"></div>
+          </div>
+          <div class="second-contents__2__bottom">
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="gs">★</span>
+          </div>
+        </div>
+        <div class="second-contents__3">
+          <div class="second-contents__3__top">
+            <div class="second-contents__3__top--box"></div>
+          </div>
+          <div class="second-contents__3__bottom">
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="gs">★</span>
+          </div>
+        </div>
+        <div class="second-contents__4">
+          <div class="second-contents__4__top">
+            <div class="second-contents__4__top--box"></div>
+          </div>
+          <div class="second-contents__4__bottom">
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="ys">★</span>
+            <span class="gs">★</span>
+          </div>
+        </div>
+      </div>
+      <div class="third-title">Popular authors</div>
+      <div class="third-contents">
+        <div class="third-contents__left">
+          <div class="third-contents__left--box"></div>
+        </div>
+        <div class="third-contents__right">
+          <div class="third-contents__right__top">
+            <div class="third-contents__right__top--font">
+              <div>George Raymond</div>
+              <div>Richard Martin</div>
+            </div>
+          </div>
+          <div class="third-contents__right__bottom">
+            <div class="third-contents__right__bottom--font">
+              Modern American science fiction writer, screenwriter, producer and
+              editor, winner of many literary awards
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
